@@ -9,6 +9,11 @@ body {
 }
 
 .header {
+  display: flex;
+  padding: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -23,10 +28,18 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: flex-start;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+}
+
+.links {
+  display: flex;
+  justify-items: left;
+  flex-direction: row;
 }
 
 button {
@@ -44,5 +57,13 @@ a {
 }
 
 ul {
+  display: flex;
+  gap: 16px;
   list-style-type: none;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
